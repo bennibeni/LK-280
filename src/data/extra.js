@@ -719,6 +719,342 @@ export const EXTRA = {
  ],
  "fig-5": [
   {
+   "title": "Funzioni del pulsante FUNCTION",
+   "pages": [
+    "I-7",
+    "I-8"
+   ],
+   "blocks": [
+    {
+     "t": "p",
+     "text": "È possibile usare il pulsante FUNCTION ({29}) per regolare l’effetto di reverbero, per cancellare i dati, e per eseguire una vasta gamma di altre operazioni della tastiera digitale."
+    },
+    {
+     "t": "h",
+     "text": "Per selezionare una funzione"
+    },
+    {
+     "t": "step",
+     "n": 1,
+     "text": "Premere {29} (FUNCTION) per visualizzare il menu delle funzioni."
+    },
+    {
+     "t": "step",
+     "n": 2,
+     "text": "Usare i tasti [4] (←) e [6] (→) {17} (10 tasti) per visualizzare la funzione che si desidera."
+    },
+    {
+     "t": "li",
+     "text": "È possibile uscire dal menu delle funzioni premendo {29} (FUNCTION)."
+    },
+    {
+     "t": "li",
+     "text": "Dopo aver selezionato le funzioni da 8 a 13, premere il tasto [9] (ENTER) {17} (10 tasti) per visualizzare il sottomenu dell’opzione del menu. Quindi usare [4] (←) e [6] (→) per selezionare un’opzione. È possibile chiudere un sottomenu premendo il tasto [7] (EXIT) {17} (10 tasti)."
+    },
+    {
+     "t": "thead",
+     "cells": [
+      "N.",
+      "Funzione",
+      "Display",
+      "Vedere a pagina"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "1",
+      "Trasposizione",
+      "Trans.",
+      "I-17"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "2",
+      "Volume dell’accompagnamento",
+      "AcompVol",
+      "I-41"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "3",
+      "Volume del brano",
+      "Song Vol",
+      "I-28"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "4",
+      "Risposta al tocco",
+      "Touch",
+      "I-11"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "5",
+      "Intonazione",
+      "Tune",
+      "I-18"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "6",
+      "Reverbero",
+      "Reverb",
+      "I-16"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "7",
+      "Chorus",
+      "Chorus",
+      "I-16"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "8",
+      "Campionamento",
+      "SAMPLING",
+      ""
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "",
+      "— Avvio del campionamento automatico",
+      "AutoStrt",
+      "I-24"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "",
+      "— Arresto del campionamento automatico",
+      "AutoStop",
+      "I-24"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "",
+      "— Protezione dei timbri campionati",
+      "(Protect)",
+      "I-25"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "9",
+      "Lezione progressiva",
+      "LESSON",
+      ""
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "",
+      "— Guida vocale alla diteggiatura",
+      "Speak",
+      "I-33"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "",
+      "— Guida delle note",
+      "NoteGuid",
+      "I-34"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "",
+      "— Valutazione dell’esecuzione",
+      "Scoring",
+      "I-34"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "",
+      "— Lunghezza frase",
+      "PhraseLn",
+      "I-34"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "10",
+      "Scale preimpostate",
+      "SCALE",
+      "I-49"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "11",
+      "Altre impostazioni",
+      "OTHER",
+      ""
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "",
+      "— Mantenimento arpeggiatore",
+      "ArpegHld",
+      "I-51"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "",
+      "— Effetto del pedale",
+      "Jack",
+      "I-17"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "",
+      "— Scala accompagnamento",
+      "AcompScl",
+      "I-50"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "",
+      "— Contrasto LCD",
+      "Contrast",
+      "I-12"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "",
+      "— Avviso di accensione",
+      "Demo2",
+      "I-11"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "12",
+      "Impostazioni MIDI",
+      "MIDI",
+      ""
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "",
+      "— Canale tastiera",
+      "Keybd Ch",
+      "I-60"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "",
+      "— Canali di navigazione",
+      "Navi. Ch",
+      "I-60"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "",
+      "— Controllo locale",
+      "Local",
+      "I-61"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "",
+      "— Uscita accompagnamento",
+      "AcompOut",
+      "I-61"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "13",
+      "Cancellazione",
+      "DELETE",
+      ""
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "",
+      "— Cancellazione del suono campionato",
+      "(nome di timbro)",
+      "I-25"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "",
+      "— Cancellazione del brano dell’utente",
+      "(nome di brano)",
+      "I-52"
+     ]
+    },
+    {
+     "t": "tr",
+     "cells": [
+      "",
+      "— Cancellazione di tutti i dati",
+      "All Data",
+      "I-52"
+     ]
+    },
+    {
+     "t": "li",
+     "text": "Il timbro e gli altri parametri ritornano alle loro impostazioni di default iniziali ogniqualvolta si accende l’alimentazione (pagina I-10)."
+    }
+   ]
+  },
+  {
    "title": "Ripristino della tastiera digitale alle sue impostazioni iniziali di fabbrica",
    "pages": [
     "I-8"
@@ -865,6 +1201,14 @@ export const EXTRA = {
      "text": "Premere {29} (FUNCTION) e quindi usare i tasti [4] (←) e [6] (→) {17} (10 tasti) per visualizzare “Touch” (pagina I-7)."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p12-2.webp",
+     "alt": "Display: Touch",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "Touch"
+    },
+    {
      "t": "step",
      "n": 2,
      "text": "Usare i tasti [–] e [+] {17} (10 tasti) per selezionare una delle tre impostazioni di sensibilità della risposta al tocco."
@@ -895,6 +1239,14 @@ export const EXTRA = {
      "text": "Premere {29} (FUNCTION) e quindi usare i tasti [4] (←) e [6] (→) {17} (10 tasti) per visualizzare “OTHER” (pagina I-7)."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p13-1.webp",
+     "alt": "Display: OTHER",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "OTHER"
+    },
+    {
      "t": "step",
      "n": 2,
      "text": "Premere il tasto [9] (ENTER) {17} (10 tasti)."
@@ -903,6 +1255,14 @@ export const EXTRA = {
      "t": "step",
      "n": 3,
      "text": "Usare i tasti [4] (←) e [6] (→) {17} (10 tasti) per visualizzare “Contrast”."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p13-2.webp",
+     "alt": "Display: Contrast",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "Contrast"
     },
     {
      "t": "step",
@@ -933,6 +1293,14 @@ export const EXTRA = {
      "text": "Premere {29} (FUNCTION) e quindi usare i tasti [4] (←) e [6] (→) {17} (10 tasti) per visualizzare “Reverb” (pagina I-7)."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p17-2.webp",
+     "alt": "Display: Reverb",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "Reverb"
+    },
+    {
      "t": "step",
      "n": 2,
      "text": "Usare i tasti [–] e [+] {17} (10 tasti) per selezionare l’impostazione del reverbero che si desidera."
@@ -961,6 +1329,14 @@ export const EXTRA = {
      "t": "step",
      "n": 1,
      "text": "Premere {29} (FUNCTION) e quindi usare i tasti [4] (←) e [6] (→) {17} (10 tasti) per visualizzare “Chorus” (pagina I-7)."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p17-3.webp",
+     "alt": "Display: Chorus",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "Chorus"
     },
     {
      "t": "step",
@@ -1002,6 +1378,14 @@ export const EXTRA = {
      "text": "Premere {29} (FUNCTION)."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p18-3.webp",
+     "alt": "Display: Trans.",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "Trans."
+    },
+    {
      "t": "step",
      "n": 2,
      "text": "Usare i tasti [–] e [+] {17} (10 tasti) per selezionare l’impostazione di trasposizione che si desidera."
@@ -1024,6 +1408,14 @@ export const EXTRA = {
      "text": "Premere {29} (FUNCTION) e quindi usare i tasti [4] (←) e [6] (→) {17} (10 tasti) per visualizzare “Tune”."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p19-1.webp",
+     "alt": "Display: Tune",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "Tune"
+    },
+    {
      "t": "step",
      "n": 2,
      "text": "Usare i tasti [–] e [+] {17} (10 tasti) per regolare l’intonazione."
@@ -1031,6 +1423,14 @@ export const EXTRA = {
     {
      "t": "li",
      "text": "Eseguendo questo passo, cambia la visualizzazione da “Tune” ad un valore che indica l’impostazione attuale della frequenza come viene mostrato di seguito. È possibile cambiare la frequenza in passi di 0,1 Hz."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p19-2.webp",
+     "alt": "Display: 440.0Hz",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "440.0Hz"
     },
     {
      "t": "li",
@@ -1066,6 +1466,14 @@ export const EXTRA = {
      "text": "Se non si esegue nessuna operazione entro pochi secondi dopo che è apparsa questa schermata, il display ritornerà automaticamente alla schermata precedente."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p19-3.webp",
+     "alt": "Display: OctUpper",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "OctUpper"
+    },
+    {
      "t": "step",
      "n": 2,
      "text": "Usare i tasti [–] e [+] {17} (10 tasti) per cambiare l’ottava."
@@ -1090,6 +1498,14 @@ export const EXTRA = {
     {
      "t": "li",
      "text": "Suddivisione disattiva: Apparirà la schermata mostrata sotto. Avanzare al passo 4."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p19-4.webp",
+     "alt": "Display: OctLower",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "OctLower"
     },
     {
      "t": "step",
@@ -1126,9 +1542,25 @@ export const EXTRA = {
      "text": "Premere {13} (TONE) e quindi usare {17} (10 tasti) per introdurre il numero di timbro (606, 607, o 608) per il set batteria di cui si desidera cambiare i suoni."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p23-1.webp",
+     "alt": "Display: No Data",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "No Data"
+    },
+    {
      "t": "step",
      "n": 3,
      "text": "Premere {27} e {28} contemporaneamente."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p23-2.webp",
+     "alt": "Display: No Data",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "No Data"
     },
     {
      "t": "step",
@@ -1138,6 +1570,14 @@ export const EXTRA = {
     {
      "t": "p",
      "text": "In questo modo si entra nello stato di attesa di campionamento. Il tempo di campionamento consentito (in secondi) apparirà momentaneamente sul display, e quindi il display cambierà come segue."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p23-3.webp",
+     "alt": "Display: Waiting",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "Waiting"
     },
     {
      "t": "step",
@@ -1153,6 +1593,14 @@ export const EXTRA = {
      "text": "Il campionamento non si avvierà se il volume del suono rilevato dal microfono è troppo basso."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p23-4.webp",
+     "alt": "Display: Sampling",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "Sampling"
+    },
+    {
      "t": "step",
      "n": 6,
      "text": "Dopo che è terminato il suono che si desidera"
@@ -1164,6 +1612,14 @@ export const EXTRA = {
     {
      "t": "h",
      "text": "campionare, premere e contemporaneamente."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p23-5.webp",
+     "alt": "Display: SmplDrm1",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "SmplDrm1"
     },
     {
      "t": "p",
@@ -1212,6 +1668,14 @@ export const EXTRA = {
      "t": "step",
      "n": 3,
      "text": "Premere {29} (FUNCTION)."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p24-1.webp",
+     "alt": "Display: SmplDrm1",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "SmplDrm1"
     },
     {
      "t": "p",
@@ -1323,9 +1787,25 @@ export const EXTRA = {
      "text": "Premere {29} (FUNCTION) e quindi usare i tasti [4] (←) e [6] (→) {17} (10 tasti) per visualizzare “SAMPLING” (pagina I-7)."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p25-1.webp",
+     "alt": "Display: SAMPLING",
+     "cls": "lcdimg",
+     "w": 211,
+     "was": "SAMPLING"
+    },
+    {
      "t": "step",
      "n": 2,
      "text": "Premere il tasto [9] (ENTER) {17} (10 tasti)."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p25-2.webp",
+     "alt": "Display: AutoStrt",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "AutoStrt"
     },
     {
      "t": "step",
@@ -1368,6 +1848,14 @@ export const EXTRA = {
      "text": "Premere il tasto [6] (→) {17} (10 tasti)."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p25-3.webp",
+     "alt": "Display: AutoStop",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "AutoStop"
+    },
+    {
      "t": "step",
      "n": 4,
      "text": "Premere il tasto [–] {17} (10 tasti) per disattivare l’arresto automatico del campionamento."
@@ -1398,9 +1886,25 @@ export const EXTRA = {
      "text": "Premere {29} (FUNCTION) e quindi usare i tasti [4] (←) e [6] (→) {17} (10 tasti) per visualizzare “DELETE” (pagina I-7)."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p26-1.webp",
+     "alt": "Display: DELETE",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "DELETE"
+    },
+    {
      "t": "step",
      "n": 2,
      "text": "Premere il tasto [9] (ENTER) {17} (10 tasti)."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p26-2.webp",
+     "alt": "Display: S1:Orgnl",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "S1:Orgnl"
     },
     {
      "t": "step",
@@ -1415,6 +1919,14 @@ export const EXTRA = {
     {
      "t": "p",
      "text": "Questa operazione visualizza un messaggio di conferma di cancellazione."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p26-3.webp",
+     "alt": "Display: Sure?",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "Sure?"
     },
     {
      "t": "step",
@@ -1458,6 +1970,14 @@ export const EXTRA = {
      "text": "Usare i tasti [4] (←) e [6] (→) {17} (10 tasti) per visualizzare “Protect”."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p26-4.webp",
+     "alt": "Display: Protect",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "Protect"
+    },
+    {
      "t": "step",
      "n": 5,
      "text": "Premere il tasto [+] {17} (10 tasti) per attivare la protezione."
@@ -1465,6 +1985,14 @@ export const EXTRA = {
     {
      "t": "p",
      "text": "Una volta che è protetto, un timbro non può essere cancellato. Un timbro protetto è indicato come mostrato sotto."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p26-5.webp",
+     "alt": "Display: *1:Orgnl",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "*1:Orgnl"
     },
     {
      "t": "h",
@@ -2032,36 +2560,53 @@ export const EXTRA = {
      "text": "Di seguito vengono riportati i messaggi che appaiono sul display durante le lezioni progressive."
     },
     {
-     "t": "row",
-     "text": "Messaggio Descrizione"
+     "t": "thead",
+     "cells": [
+      "Messaggio",
+      "Descrizione"
+     ]
     },
     {
-     "t": "p",
-     "text": "<Phrase> Appare quando si seleziona una frase, quando si avvia una lezione, ecc."
+     "t": "tr",
+     "cells": [
+      "<Phrase>",
+      "Appare quando si seleziona una frase, quando si avvia una lezione, ecc. • Notare che determinate frasi faranno apparire “<Wait>” invece di “<Phrase>”."
+     ]
     },
     {
-     "t": "li",
-     "text": "Notare che determinate frasi faranno apparire “<Wait>” invece di “<Phrase>”."
+     "t": "tr",
+     "cells": [
+      "<Wait>",
+      "Appare quando la lezione si avvia con una frase di introduzione o di stacco (fill-in) che non è inclusa nelle frasi su cui fare pratica. Lo strumento per l’esercizio avanza automaticamente alla frase successiva dopo l’esecuzione della frase non inclusa, quindi attendere fino a quel punto per iniziare a suonare sulla tastiera."
+     ]
     },
     {
-     "t": "p",
-     "text": "<Wait> Appare quando la lezione si avvia con una frase di introduzione o di stacco (fill-in) che non è inclusa nelle frasi su cui fare pratica. Lo strumento per l’esercizio avanza automaticamente alla frase successiva dopo l’esecuzione della frase non inclusa, quindi attendere fino a quel punto per iniziare a suonare sulla tastiera."
+     "t": "tr",
+     "cells": [
+      "NextPhrs",
+      "Appare quando si avanza automaticamente alla frase successiva. Questo messaggio appare in seguito ad una frase per la quale viene visualizzato “<Wait>” (vedere sopra), e durante una lezione progressiva automatica (pagina I-35)."
+     ]
     },
     {
-     "t": "p",
-     "text": "NextPhrs Appare quando si avanza automaticamente alla frase successiva. Questo messaggio appare in seguito ad una frase per la quale viene visualizzato “<Wait>” (vedere sopra), e durante una lezione progressiva automatica (pagina I-35)."
+     "t": "tr",
+     "cells": [
+      "Listen / Watch / Remember",
+      "Appare all’avvio della lezione progressiva automatica 1, 2 o 3 (pagina I-33)."
+     ]
     },
     {
-     "t": "p",
-     "text": "Listen Appare all’avvio della lezione progressiva Watch automatica 1, 2 o 3 (pagina I-33). Remember"
+     "t": "tr",
+     "cells": [
+      "From top",
+      "Questo messaggio appare durante la lezione progressiva automatica (pagina I-35) immediatamente prima dell’esercizio, dalla Frase 1 fino alla frase su cui si sta facendo attualmente pratica."
+     ]
     },
     {
-     "t": "p",
-     "text": "From top Questo messaggio appare durante la lezione progressiva automatica (pagina I-35) immediatamente prima dell’esercizio, dalla Frase 1 fino alla frase su cui si sta facendo attualmente pratica."
-    },
-    {
-     "t": "p",
-     "text": "Complete Appare al termine della lezione progressiva automatica (pagina I-35)."
+     "t": "tr",
+     "cells": [
+      "Complete",
+      "Appare al termine della lezione progressiva automatica (pagina I-35)."
+     ]
     }
    ]
   },
@@ -2090,6 +2635,13 @@ export const EXTRA = {
      "text": "In questo modo si disabilita l’esecuzione a ripetizione della frase."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p34-1.webp",
+     "alt": "Display: schermata",
+     "cls": "lcdimg",
+     "w": 232
+    },
+    {
      "t": "h",
      "text": "Disattivazione della guida vocale alla diteggiatura"
     },
@@ -2103,9 +2655,25 @@ export const EXTRA = {
      "text": "Premere {29} (FUNCTION) e quindi usare i tasti [4] (←) e [6] (→) {17} (10 tasti) per visualizzare “LESSON” (pagina I-7)."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p34-2.webp",
+     "alt": "Display: LESSON",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "LESSON"
+    },
+    {
      "t": "step",
      "n": 2,
      "text": "Premere il tasto {17} (10 tasti) [9] (ENTER)."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p34-3.webp",
+     "alt": "Display: Speak",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "Speak"
     },
     {
      "t": "step",
@@ -2136,6 +2704,14 @@ export const EXTRA = {
      "text": "Usare i tasti [4] (←) e [6] (→) {17} (10 tasti) per visualizzare “NoteGuid”."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p35-1.webp",
+     "alt": "Display: NoteGuid",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "NoteGuid"
+    },
+    {
      "t": "step",
      "n": 4,
      "text": "Premere il tasto [–] {17} (10 tasti) per selezionare l’impostazione OFF."
@@ -2164,6 +2740,14 @@ export const EXTRA = {
      "text": "Usare i tasti [4] (←) e [6] (→) {17} (10 tasti) per visualizzare “Scoring”."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p35-2.webp",
+     "alt": "Display: Scoring",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "Scoring"
+    },
+    {
      "t": "step",
      "n": 4,
      "text": "Premere il tasto [–] {17} (10 tasti) per selezionare l’impostazione OFF."
@@ -2190,6 +2774,14 @@ export const EXTRA = {
      "t": "step",
      "n": 3,
      "text": "Usare i tasti [4] (←) e [6] (→) {17} (10 tasti) per visualizzare “PhraseLn”."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p35-3.webp",
+     "alt": "Display: PhraseLn",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "PhraseLn"
     },
     {
      "t": "step",
@@ -2254,6 +2846,13 @@ export const EXTRA = {
      "text": "Questa operazione abilita l’introduzione degli accordi sulla tastiera per l’accompagnamento."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p39-1.webp",
+     "alt": "Display: schermata",
+     "cls": "lcdimg",
+     "w": 169
+    },
+    {
      "t": "step",
      "n": 3,
      "text": "Usare la tastiera per l’accompagnamento per suonare gli accordi."
@@ -2261,6 +2860,13 @@ export const EXTRA = {
     {
      "t": "p",
      "text": "In queso modo le parti dell’auto-accompagnamento del basso e dell’armonia verranno aggiunte alla parte del ritmo."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p39-2.webp",
+     "alt": "Display: schermata",
+     "cls": "lcdimg",
+     "w": 194
     },
     {
      "t": "p",
@@ -2316,6 +2922,14 @@ export const EXTRA = {
      "t": "step",
      "n": 1,
      "text": "Mantenere premuto {11} finché non appare sul display la schermata per la selezione del modo di introduzione degli accordi."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p39-3.webp",
+     "alt": "Display: Chord",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "Chord"
     },
     {
      "t": "step",
@@ -2472,6 +3086,13 @@ export const EXTRA = {
      "text": "Per registrare alla Traccia 1, eseguire i passi da 1 a 4 riportati in “Registrazione e riproduzione dell’esecuzione con la tastiera” (pagina I-44)."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p47-1.webp",
+     "alt": "Display: schermata",
+     "cls": "lcdimg",
+     "w": 165
+    },
+    {
      "t": "step",
      "n": 2,
      "text": "Premere {3}."
@@ -2481,6 +3102,13 @@ export const EXTRA = {
      "text": "In questo modo si entrerà in attesa di registrazione."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p47-2.webp",
+     "alt": "Display: schermata",
+     "cls": "lcdimg",
+     "w": 165
+    },
+    {
      "t": "step",
      "n": 3,
      "text": "Premere un pulsante da {19} a {23} per selezionare il numero della traccia successiva alla quale si desidera registrare."
@@ -2488,6 +3116,13 @@ export const EXTRA = {
     {
      "t": "p",
      "text": "In questo modo si entrerà in attesa di registrazione per la traccia selezionata. Esempio: Traccia 2"
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p47-3.webp",
+     "alt": "Display: schermata",
+     "cls": "lcdimg",
+     "w": 157
     },
     {
      "t": "li",
@@ -2546,9 +3181,23 @@ export const EXTRA = {
      "text": "Esempio: Traccia 2 e Traccia 3 selezionate"
     },
     {
+     "t": "img",
+     "src": "img/lcd-p47-4.webp",
+     "alt": "Display: schermata",
+     "cls": "lcdimg",
+     "w": 157
+    },
+    {
      "t": "step",
      "n": 8,
      "text": "Premere due volte {3} per uscire dalla modalità di registrazione."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p47-5.webp",
+     "alt": "Display: schermata",
+     "cls": "lcdimg",
+     "w": 157
     },
     {
      "t": "h",
@@ -2583,6 +3232,14 @@ export const EXTRA = {
     {
      "t": "p",
      "text": "Un numero di brano apparirà nell’angolo in alto a sinistra del display per qualche secondo. Mentre appare, usare {17} (10 tasti) per specificare il numero del brano che si desidera registrare o riprodurre. Il numero di brano scomparirà se non si esegue nessuna operazione. Esempio: Brano 2"
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p48-1.webp",
+     "alt": "Display: Play No.",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "Play No."
     },
     {
      "t": "step",
@@ -2646,6 +3303,13 @@ export const EXTRA = {
      "text": "In questo modo si entrerà in attesa di riproduzione."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p48-2.webp",
+     "alt": "Display: schermata",
+     "cls": "lcdimg",
+     "w": 166
+    },
+    {
      "t": "step",
      "n": 3,
      "text": "Premere di nuovo {3}."
@@ -2653,6 +3317,13 @@ export const EXTRA = {
     {
      "t": "p",
      "text": "In questo modo si entrerà in attesa di registrazione."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p48-3.webp",
+     "alt": "Display: schermata",
+     "cls": "lcdimg",
+     "w": 202
     },
     {
      "t": "step",
@@ -2665,8 +3336,22 @@ export const EXTRA = {
      "text": "Premere {11} per commutare ciclicamente le parti nella sequenza mostrata sotto."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p49-seq.webp",
+     "alt": "Sequenza: mano destra → mano sinistra → entrambe le mani",
+     "cls": "lcdimg",
+     "w": 134
+    },
+    {
      "t": "p",
      "text": "Esempio: Registrazione della parte della mano sinistra"
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p49-1.webp",
+     "alt": "Display: schermata",
+     "cls": "lcdimg",
+     "w": 119
     },
     {
      "t": "li",
@@ -2693,6 +3378,13 @@ export const EXTRA = {
     {
      "t": "p",
      "text": "In questo modo si entrerà in attesa di riproduzione."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p49-2.webp",
+     "alt": "Display: schermata",
+     "cls": "lcdimg",
+     "w": 165
     },
     {
      "t": "step",
@@ -2860,6 +3552,14 @@ export const EXTRA = {
      "text": "Mantenere premuto {13} (TONE) finché sul display non appare l’indicatore mostrato sotto."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p51-3.webp",
+     "alt": "Display: ILoveHer",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "ILoveHer"
+    },
+    {
      "t": "step",
      "n": 2,
      "text": "Usare {17} (10 tasti) per selezionare il numero del brano preinstallato che si desidera."
@@ -2899,6 +3599,14 @@ export const EXTRA = {
      "text": "Premere {29} (FUNCTION) e quindi usare i tasti [4] (←) e [6] (→) {17} (10 tasti) per visualizzare “DELETE” (pagina I-7)."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p53-1.webp",
+     "alt": "Display: DELETE",
+     "cls": "lcdimg",
+     "w": 217,
+     "was": "DELETE"
+    },
+    {
      "t": "step",
      "n": 2,
      "text": "Premere il tasto [9] (ENTER) {17} (10 tasti)."
@@ -2907,6 +3615,14 @@ export const EXTRA = {
      "t": "step",
      "n": 3,
      "text": "Premere il tasto [6] (→) {17} (10 tasti)."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p53-2.webp",
+     "alt": "Display: USERSONG",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "USERSONG"
     },
     {
      "t": "step",
@@ -2921,6 +3637,14 @@ export const EXTRA = {
     {
      "t": "p",
      "text": "Questa operazione visualizza un messaggio di conferma di cancellazione."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p53-3.webp",
+     "alt": "Display: Sure?",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "Sure?"
     },
     {
      "t": "step",
@@ -2961,6 +3685,14 @@ export const EXTRA = {
      "text": "Premere {29} (FUNCTION) e quindi usare i tasti [4] (←) e [6] (→) {17} (10 tasti) per visualizzare “DELETE” (pagina I-7)."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p53-4.webp",
+     "alt": "Display: DELETE",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "DELETE"
+    },
+    {
      "t": "step",
      "n": 2,
      "text": "Premere il tasto [9] (ENTER) {17} (10 tasti)."
@@ -2971,6 +3703,14 @@ export const EXTRA = {
      "text": "Usare i tasti [4] (←) e [6] (→) {17} (10 tasti) per visualizzare “All Data”."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p53-5.webp",
+     "alt": "Display: AllData",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "AllData"
+    },
+    {
      "t": "step",
      "n": 4,
      "text": "Premere il tasto [9] (ENTER) {17} (10 tasti)."
@@ -2978,6 +3718,14 @@ export const EXTRA = {
     {
      "t": "p",
      "text": "Questa operazione visualizza un messaggio di conferma di cancellazione."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p53-6.webp",
+     "alt": "Display: Sure?",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "Sure?"
     },
     {
      "t": "step",
@@ -3045,6 +3793,30 @@ export const EXTRA = {
    ]
   },
   {
+   "title": "Posizioni dei file sulla scheda (cartella MUSICDAT)",
+   "pages": [
+    "I-56"
+   ],
+   "blocks": [
+    {
+     "t": "p",
+     "text": "La tastiera salva i suoi dati in una cartella denominata “MUSICDAT” sulla scheda di memoria."
+    },
+    {
+     "t": "li",
+     "text": "La cartella “MUSICDAT” viene creata automaticamente quando si formatta la scheda di memoria sulla tastiera digitale (pagina I-54)."
+    },
+    {
+     "t": "li",
+     "text": "Se si memorizza un file in una qualsiasi altra posizione eccetto che nella cartella “MUSICDAT”, non sarà possibile richiamare, cancellare, o riprodurre il file sulla tastiera digitale. Non si sarà neanche in grado di richiamare, cancellare, o riprodurre qualsiasi file memorizzato in una sottocartella creata all’interno della cartella “MUSICDAT”."
+    },
+    {
+     "t": "li",
+     "text": "Se si prova ad eseguire un’operazione di richiamo, cancellazione o riproduzione mentre non è presente nessun file all’interno della cartella “MUSICDAT”, apparirà sul display il messaggio “No File”."
+    }
+   ]
+  },
+  {
    "title": "Caricamento dei dati da una scheda di memoria alla memoria della tastiera digitale",
    "pages": [
     "I-56"
@@ -3064,32 +3836,39 @@ export const EXTRA = {
      "text": "Sulla tastiera digitale, selezionare i dati che si desidera caricare come viene descritto di seguito."
     },
     {
-     "t": "row",
-     "text": "Per caricare"
+     "t": "thead",
+     "cells": [
+      "Per caricare questo tipo di dati",
+      "Fare questo"
+     ]
     },
     {
-     "t": "row",
-     "text": "Fare questo"
+     "t": "tr",
+     "cells": [
+      "Suono campionato",
+      "Selezionare il numero di timbro del suono campionato che si desidera caricare."
+     ]
     },
     {
-     "t": "row",
-     "text": "questo tipo di dati"
+     "t": "tr",
+     "cells": [
+      "Brano dell’utente",
+      "Selezionare il numero del brano che si desidera caricare."
+     ]
     },
     {
-     "t": "p",
-     "text": "Suono campionato Selezionare il numero di timbro del suono campionato che si desidera caricare."
+     "t": "tr",
+     "cells": [
+      "Brano registrato",
+      "Selezionare il brano che si desidera caricare e mettere la tastiera digitale in attesa di riproduzione."
+     ]
     },
     {
-     "t": "p",
-     "text": "Brano dell’utente Selezionare il numero del brano che si desidera caricare."
-    },
-    {
-     "t": "p",
-     "text": "Brano registrato Selezionare il brano che si desidera caricare e mettere la tastiera digitale in attesa di riproduzione."
-    },
-    {
-     "t": "p",
-     "text": "Tutti i dati Selezionare uno dei timbri, brani, ecc., di default incorporati della tastiera digitale."
+     "t": "tr",
+     "cells": [
+      "Tutti i dati",
+      "Selezionare uno dei timbri, brani, ecc., di default incorporati della tastiera digitale."
+     ]
     },
     {
      "t": "step",
@@ -3106,9 +3885,24 @@ export const EXTRA = {
      "text": "Per annullare il caricamento dei dati, premere di nuovo {16}."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p57-1.webp",
+     "alt": "Display: schermata",
+     "cls": "lcdimg",
+     "w": 115
+    },
+    {
      "t": "step",
      "n": 4,
      "text": "Premere il tasto [9] (ENTER) {17} (10 tasti)."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p57-2.webp",
+     "alt": "Display: ********",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "********"
     },
     {
      "t": "li",
@@ -3129,8 +3923,24 @@ export const EXTRA = {
      "text": "In questo modo si salveranno i dati nella memoria della tastiera digitale."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p57-3.webp",
+     "alt": "Display: Complete",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "Complete"
+    },
+    {
      "t": "li",
      "text": "Se ci sono già dati memorizzati nell’area dell’utente dove si sta tentando di caricare i dati, apparirà un messaggio di conferma di sovrascrittura. Premere il tasto [+] (YES) {17} (10 tasti) per sovrascrivere, oppure [–] (NO) o [7] (EXIT) per annullare."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p57-4.webp",
+     "alt": "Display: Replace?",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "Replace?"
     }
    ]
   },
@@ -3150,32 +3960,39 @@ export const EXTRA = {
      "text": "Sulla tastiera digitale, selezionare i dati che si desidera cancellare come viene descritto di seguito."
     },
     {
-     "t": "row",
-     "text": "Per cancellare"
+     "t": "thead",
+     "cells": [
+      "Per cancellare questo tipo di dati",
+      "Fare questo"
+     ]
     },
     {
-     "t": "row",
-     "text": "Fare questo"
+     "t": "tr",
+     "cells": [
+      "Suono campionato",
+      "Selezionare il numero di timbro del suono campionato."
+     ]
     },
     {
-     "t": "row",
-     "text": "questo tipo di dati"
+     "t": "tr",
+     "cells": [
+      "Brano dell’utente",
+      "Selezionare il numero di brano dell’utente."
+     ]
     },
     {
-     "t": "p",
-     "text": "Suono campionato Selezionare il numero di timbro del suono campionato."
+     "t": "tr",
+     "cells": [
+      "Brano registrato",
+      "Selezionare il brano e mettere la tastiera digitale in attesa di riproduzione."
+     ]
     },
     {
-     "t": "p",
-     "text": "Brano dell’utente Selezionare il numero di brano dell’utente."
-    },
-    {
-     "t": "p",
-     "text": "Brano registrato Selezionare il brano e mettere la tastiera digitale in attesa di riproduzione."
-    },
-    {
-     "t": "p",
-     "text": "Tutti i dati Selezionare uno dei timbri, brani incorporati di default della tastiera digitale."
+     "t": "tr",
+     "cells": [
+      "Tutti i dati",
+      "Selezionare uno dei timbri, brani incorporati di default della tastiera digitale."
+     ]
     },
     {
      "t": "step",
@@ -3192,6 +4009,13 @@ export const EXTRA = {
      "text": "Per annullare la cancellazione dei dati, premere di nuovo {16}."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p58-1.webp",
+     "alt": "Display: schermata",
+     "cls": "lcdimg",
+     "w": 115
+    },
+    {
      "t": "step",
      "n": 4,
      "text": "Usare i tasti [4] (←) e [6] (→) {17} (10 tasti) per visualizzare una delle impostazioni mostrate di seguito."
@@ -3201,37 +4025,52 @@ export const EXTRA = {
      "text": "È anche possibile usare [–] e [+]."
     },
     {
-     "t": "row",
-     "text": "Per cancellare"
+     "t": "thead",
+     "cells": [
+      "Per cancellare questo tipo di dati",
+      "Visualizzare questa schermata"
+     ]
     },
     {
-     "t": "row",
-     "text": "Visualizzare questa schermata"
+     "t": "tr",
+     "cells": [
+      "Suono campionato",
+      "“dEL” “SmplTone”"
+     ]
     },
     {
-     "t": "row",
-     "text": "questo tipo di dati"
+     "t": "tr",
+     "cells": [
+      "Brano dell’utente",
+      "“dEL” “UserSong”"
+     ]
     },
     {
-     "t": "p",
-     "text": "Suono campionato “dEL” “SmplTone”"
+     "t": "tr",
+     "cells": [
+      "Brano registrato",
+      "“dEL” “Rec.Song”"
+     ]
     },
     {
-     "t": "p",
-     "text": "Brano dell’utente “dEL” “UserSong”"
-    },
-    {
-     "t": "p",
-     "text": "Brano registrato “dEL” “Rec.Song”"
-    },
-    {
-     "t": "p",
-     "text": "Tutti i dati “dEL” “All Data”"
+     "t": "tr",
+     "cells": [
+      "Tutti i dati",
+      "“dEL” “All Data”"
+     ]
     },
     {
      "t": "step",
      "n": 5,
      "text": "Premere il tasto [9] (ENTER) {17} (10 tasti)."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p58-2.webp",
+     "alt": "Display: ********",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "********"
     },
     {
      "t": "li",
@@ -3252,6 +4091,14 @@ export const EXTRA = {
      "text": "Questa operazione visualizzerà la schermata di conferma per la cancellazione."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p58-3.webp",
+     "alt": "Display: Sure?",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "Sure?"
+    },
+    {
      "t": "step",
      "n": 8,
      "text": "Premere il tasto [+] (YES) {17} (10 tasti)."
@@ -3259,6 +4106,14 @@ export const EXTRA = {
     {
      "t": "li",
      "text": "Per annullare l’operazione di cancellazione, premere [–] (NO) o [7] (EXIT) invece di [+] (YES)."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p58-4.webp",
+     "alt": "Display: Complete",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "Complete"
     }
    ]
   },
@@ -3349,9 +4204,25 @@ export const EXTRA = {
      "text": "Premere {29} (FUNCTION) e quindi usare i tasti [4] (←) e [6] (→) {17} (10 tasti) per visualizzare “MIDI” (pagina I-7)."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p61-1.webp",
+     "alt": "Display: MIDI",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "MIDI"
+    },
+    {
      "t": "step",
      "n": 2,
      "text": "Premere il tasto {17} (10 tasti) [9] (ENTER)."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p61-2.webp",
+     "alt": "Display: Keybd Ch",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "Keybd Ch"
     },
     {
      "t": "step",
@@ -3390,6 +4261,14 @@ export const EXTRA = {
      "text": "Usare i tasti [4] (←) e [6] (→) {17} (10 tasti) per visualizzare “Navi. Ch”."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p61-3.webp",
+     "alt": "Display: Navi. Ch",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "Navi. Ch"
+    },
+    {
      "t": "step",
      "n": 4,
      "text": "Usare {17} (10 tasti) per specificare il canale di navigazione (R)."
@@ -3422,6 +4301,13 @@ export const EXTRA = {
     {
      "t": "li",
      "text": "Se si disattiva un canale, è possibile eseguire la parte annullata sulla tastiera usando lo stesso timbro del canale da voi disattivato. Se si disattivano entrambi i canali (opzione (3)), quello che si suona sulla tastiera utilizza il timbro del canale di navigazione (R)."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p62-1.webp",
+     "alt": "Display: schermata",
+     "cls": "lcdimg",
+     "w": 143
     },
     {
      "t": "row",
@@ -3479,6 +4365,14 @@ export const EXTRA = {
      "text": "Usare i tasti [4] (←) e [6] (→) {17} (10 tasti) per visualizzare “Local”."
     },
     {
+     "t": "img",
+     "src": "img/lcd-p62-2.webp",
+     "alt": "Display: Local",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "Local"
+    },
+    {
      "t": "step",
      "n": 4,
      "text": "Usare i tasti [–] e [+] {17} (10 tasti) per specificare l’impostazione del controllo locale."
@@ -3505,6 +4399,14 @@ export const EXTRA = {
      "t": "step",
      "n": 3,
      "text": "Usare i tasti [4] (←) e [6] (→) {17} (10 tasti) per visualizzare “AcompOut”."
+    },
+    {
+     "t": "img",
+     "src": "img/lcd-p62-3.webp",
+     "alt": "Display: AcompOut",
+     "cls": "lcdimg",
+     "w": 210,
+     "was": "AcompOut"
     },
     {
      "t": "step",

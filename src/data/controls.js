@@ -15,7 +15,7 @@ export const CONTROLS = {
   13: ["TONE · MUSIC PRESET", "Sceglie il timbro; tenuto premuto richiama i preset musicali.", "I-14"],
   14: ["RHYTHM · ONE TOUCH PRESET", "Sceglie il ritmo; tenuto premuto applica la preselezione One-Touch.", "I-37, I-41"],
   15: ["SONG BANK", "Sceglie uno dei brani incorporati.", "I-26"],
-  16: ["CARD · LOAD/SAVE", "Modo scheda di memoria; tenuto premuto carica o salva.", "I-54"],
+  16: ["CARD · LOAD/SAVE", "Mostra e riproduce i brani della scheda SD; tenuto premuto salva o carica.", "I-54, I-58"],
   17: ["Tasti numerici · [–]/[+]", "Inseriscono numeri e cambiano valori e impostazioni.", "I-7"],
   18: ["LISTEN", "Lezione 1: ascolta il brano mentre la tastiera mostra le note.", "I-32"],
   19: ["WATCH", "Lezione 2: il brano aspetta che tu suoni la nota giusta.", "I-32"],

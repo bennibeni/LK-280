@@ -285,8 +285,26 @@ export const DETAILS = {
     ],
   },
   16: {
-    intro: "Funzioni della scheda di memoria SD: salva e carica i dati. Tenuto premuto apre il salvataggio.",
+    intro: "Funzioni della scheda di memoria SD. Premuto brevemente mostra i brani della scheda da riprodurre; tenuto premuto apre il salvataggio e il caricamento dei dati.",
     sezioni: [
+      { titolo: "Riprodurre i brani dalla scheda", passi: [
+        "Inserire la scheda nello slot {38}, con l'etichetta verso l'alto, finché si blocca con un clic.",
+        "Premere brevemente {16}: il display mostra il numero del file e il nome del brano.",
+        "Con {17} scegliere il brano.",
+        "Premere {10} per avviarlo. Ogni pressione di {10} avvia o ferma la riproduzione.",
+      ], note: [
+        "La tastiera vede solo i file nella cartella “MUSICDAT” della scheda, direttamente lì: non quelli in altre cartelle né in sottocartelle di MUSICDAT.",
+        "Si riproducono i file MIDI standard (.MID) di formato 0 o 1 e i brani CASIO (.CM2).",
+        "La cartella MUSICDAT viene creata quando si formatta la scheda sulla tastiera. Si può anche crearla dal computer e copiarci i file .mid.",
+        "Se la cartella non c'è o è vuota compare “No File”. Prima di formattare, controlla la scheda sul computer: la formattazione cancella tutto quello che contiene.",
+      ] },
+      { titolo: "Messaggi più comuni", note: [
+        "Err No Card: la scheda non è inserita bene; toglierla e reinserirla fino al clic.",
+        "No File / Err No File: manca la cartella MUSICDAT o è vuota.",
+        "Err NotSMF01: il file è un MIDI di formato 2; sono supportati solo i formati 0 e 1.",
+        "Err Format: scheda non formattata per la tastiera, danneggiata o di tipo SDXC (usare SD o SDHC fino a 32 GB).",
+        "La tabella completa dei messaggi è nella pagina Foto, sotto “Dal manuale”.",
+      ] },
       { titolo: "Salvare sulla scheda", passi: [
         "Selezionare i dati da salvare: il numero del suono campionato, il brano registrato (in attesa di riproduzione) oppure un timbro qualsiasi per salvare tutti i dati.",
         "Inserire la scheda nello slot {38}.",
@@ -520,6 +538,7 @@ export const DETAILS = {
         "Song Vol e AcompVol: volume del brano e dell'accompagnamento rispetto a ciò che suoni.",
         "LESSON → Speak: guida vocale alla diteggiatura.",
         "OTHER: effetto del pedale (Jack), contrasto del display (Contrast), avviso di accensione (Demo2), arpeggio mantenuto (ArpegHld).",
+        "L'elenco completo delle 13 funzioni del menu è nella pagina I-4, sotto “Dal manuale” → “Funzioni del pulsante FUNCTION”.",
       ] },
       { titolo: "Combinazioni", note: [
         "{16} + {29}: formattazione della scheda di memoria.",

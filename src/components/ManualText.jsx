@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { EXTRA } from "../data/extra.js";
 import RichText from "./RichText.jsx";
 
@@ -96,9 +96,17 @@ function Block({ g, onNavigate }) {
           </table>
         </div>
       );
+    case "lcd":
+      return <div className="lcd" title="Testo sul display">{g.item.text.split(" / ").map((t, i) => <span key={i}>{t}</span>)}</div>;
     case "h":
       return <h4>{g.item.text}</h4>;
     case "img":
+      if (g.item.cls === "lcdimg")
+        return (
+          <figure className="lcdfig">
+            <img src={BASE + g.item.src} alt={g.item.alt} title={g.item.alt} loading="lazy" style={{ width: g.item.w * 1.5 + "px" }} />
+          </figure>
+        );
       return <img className="mimg" src={BASE + g.item.src} alt={g.item.alt} loading="lazy" />;
     case "row":
       return <p className="row">{rt(g.item.text)}</p>;
@@ -108,10 +116,21 @@ function Block({ g, onNavigate }) {
 }
 
 // Testi del manuale non coperti dalle schede, in fondo alla pagina della figura.
-export default function ManualText({ figId, onNavigate }) {
+export default function ManualText({ figId, onNavigate, focus }) {
   const sections = EXTRA[figId] || [];
   const [allOpen, setAllOpen] = useState(false);
   const [gen, setGen] = useState(0); // forza il ri-render dei <details> quando si apre/chiude tutto
+  const target = focus?.section ? sections.findIndex((s) => s.title === focus.section) : -1;
+
+  // Da ricerca o link: apre la sezione richiesta e la porta in vista.
+  useEffect(() => {
+    if (target < 0) return;
+    const el = document.getElementById(`${figId}-sec-${target}`);
+    if (!el) return;
+    el.open = true;
+    setTimeout(() => { el.scrollIntoView({ behavior: "smooth", block: "start" }); el.classList.add("flash"); setTimeout(() => el.classList.remove("flash"), 1600); }, 60);
+  }, [target, focus?.tick]);
+
   if (!sections.length) return null;
   const toggleAll = () => {
     setAllOpen(!allOpen);
@@ -125,7 +144,7 @@ export default function ManualText({ figId, onNavigate }) {
         <button onClick={toggleAll}>{allOpen ? "Chiudi tutto" : "Apri tutto"}</button>
       </div>
       {sections.map((s, i) => (
-        <details key={`${figId}-${i}-${gen}`} open={allOpen}>
+        <details key={`${figId}-${i}-${gen}`} id={`${figId}-sec-${i}`} open={allOpen || i === target}>
           <summary>
             <span className="st">{s.title}</span>
             <span className="sp">pag. {s.pages.length > 1 ? `${s.pages[0]}–${s.pages[s.pages.length - 1]}` : s.pages[0]}</span>

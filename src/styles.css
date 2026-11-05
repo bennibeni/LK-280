@@ -41,10 +41,10 @@ button { font: inherit; color: inherit; }
 
 .bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line);
   padding-block: 10px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
-.bar-in { max-width: 1180px; margin: 0 auto; display: flex; gap: 12px 20px; align-items: center; flex-wrap: wrap; }
+.bar-in { max-width: 1180px; margin: 0 auto; display: flex; gap: 8px 16px; align-items: center; flex-wrap: wrap; justify-content: flex-start; }
 .brand { font-family: var(--f-display); font-weight: 700; font-size: 1.25rem; letter-spacing: .04em; text-transform: uppercase; white-space: nowrap; }
 .brand span { color: var(--accent); }
-.tabs { display: flex; gap: 6px; overflow-x: auto; flex: 1 1 320px; min-width: 0; scrollbar-width: thin; padding-bottom: 2px; }
+.tabs { display: flex; gap: 4px; overflow-x: auto; flex: 1 1 100%; order: 3; min-width: 0; scrollbar-width: thin; padding-bottom: 2px; }
 .tab { flex: none; border: 1px solid var(--line); background: transparent; border-radius: 4px; padding: 4px 9px; cursor: pointer;
   font-family: var(--f-mono); font-size: .78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
 .tab[aria-current="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
@@ -226,6 +226,66 @@ h1 { margin: 2px 0 0; font-family: var(--f-display); font-weight: 700; font-size
 .tone-bank-h { border-left-color: var(--bank-line); }
 .tone-preset tr.item td { background: var(--preset-bg); }
 .tone-bank tr.item td { background: var(--bank-bg); }
+
+.zooms { display: grid; gap: 14px; margin-top: 14px; }
+.zoom { margin: 0; display: grid; gap: 6px; }
+.zoom button { padding: 0; border: 1px solid var(--line); border-radius: 6px; background: #fff; cursor: pointer; line-height: 0; overflow: hidden; width: 100%; max-width: 640px; }
+.zoom button:hover { box-shadow: 0 0 0 2px var(--accent); }
+.zoom img { width: 100%; height: auto; }
+.zoom figcaption { font-size: .92rem; display: flex; gap: 6px; align-items: center; }
+.znum { display: inline-grid; place-items: center; width: 1.5em; height: 1.5em; border-radius: 50%; background: var(--fg); color: var(--bg); font-family: var(--f-mono); font-size: .72rem; }
+
+/* Guide delle pagine Timbri, Batteria, Ritmi */
+.guide { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 16px 24px; align-items: start;
+  background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 8px; padding: 14px 18px; }
+.guide h2 { margin: 0 0 6px; font-family: var(--f-display); font-size: 1.3rem; }
+.guide p { margin: 0 0 8px; max-width: 70ch; }
+.guide-zooms { margin-top: 0; }
+@media (max-width: 900px) { .guide { grid-template-columns: minmax(0, 1fr); } }
+.setno { font-family: var(--f-mono); color: var(--accent); }
+
+/* Ricerca globale */
+.gsearch { position: relative; flex: 0 1 460px; min-width: 0; margin-right: auto; }
+.gsearch input { width: 100%; font: inherit; font-size: .9rem; color: var(--fg); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 7px 10px; }
+.gresults { position: absolute; top: calc(100% + 6px); left: 0; width: min(560px, 92vw); max-height: 70vh; overflow-y: auto; z-index: 30;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 12px 36px rgba(0,0,0,.22); padding: 4px; }
+.gres { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0 10px; width: 100%; text-align: left; border: 0; background: transparent; padding: 8px 10px; border-radius: 6px; cursor: pointer; }
+.gres.on { background: var(--accent-soft); }
+.gkind { grid-row: span 3; align-self: start; font-family: var(--f-mono); font-size: .68rem; text-transform: uppercase; letter-spacing: .05em; color: var(--accent); padding-top: 3px; min-width: 7.5em; }
+.gtitle { font-weight: 600; }
+.gwhere { font-size: .8rem; color: var(--muted); }
+.gsnip { font-size: .82rem; color: var(--muted); font-style: italic; }
+.gempty { padding: 10px 12px; color: var(--muted); }
+@media (max-width: 700px) { .gsearch { flex: 1 1 200px; } .gkind { min-width: 0; grid-row: auto; grid-column: 1 / -1; } .gres { grid-template-columns: minmax(0, 1fr); } }
+.tab-home { font-weight: 600; }
+/* Come fare */
+.howto-intro { margin: 0 0 14px; color: var(--muted); max-width: 78ch; }
+.howto-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+.howto-card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 16px 14px; display: grid; gap: 8px; align-content: start; transition: box-shadow .3s; }
+.howto-card h2 { margin: 0; font-family: var(--f-display); font-size: 1.2rem; line-height: 1.15; }
+.howto-links { display: flex; flex-wrap: wrap; gap: 6px; }
+.howto-links button { border: 1px solid var(--line); background: var(--bg); border-radius: 999px; padding: 4px 12px; cursor: pointer; font-size: .85rem; }
+.howto-links button:hover { border-color: var(--accent); }
+.flash { box-shadow: 0 0 0 3px var(--accent) !important; }
+/* Testo del display nei testi del manuale */
+.lcd { display: flex; flex-wrap: wrap; gap: 6px; margin-left: 1.4em; }
+.lcd span { font-family: var(--f-mono); font-size: .85rem; letter-spacing: .08em; background: #c9d3b4; color: #1d2416; border-radius: 4px; padding: 2px 10px; border: 1px solid #a8b38f; }
+
+/* Mini mappe nella pagina "Come fare" */
+.minimap { display: grid; gap: 8px; }
+.mini { display: grid; gap: 3px; }
+.mini-crop { position: relative; width: 100%; overflow: hidden; border-radius: 6px; border: 1px solid var(--line); background: #fff; }
+.mini-crop img { position: absolute; max-width: none; height: auto; user-select: none; }
+.mini-dot { position: absolute; transform: translate(-50%, -50%); border-radius: 50%; padding: 0; cursor: pointer; }
+.mini-dot.mark { width: 20px; height: 20px; display: grid; place-items: center; background: rgba(255,255,255,.55); border: 1.5px solid var(--accent);
+  color: #1b2430; font-family: var(--f-mono); font-size: 9.5px; font-weight: 500; line-height: 1; text-shadow: 0 0 2px #fff; }
+.mini-dot.ring { width: 26px; height: 26px; background: transparent; border: 2.5px solid var(--accent); }
+.mini-dot:hover { background: var(--accent); color: #fff; text-shadow: none; }
+.mini-cap { font-family: var(--f-mono); font-size: .68rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+
+/* Schermate del display ritagliate dal manuale */
+.lcdfig { margin: 6px 0 10px 1.4em; }
+.lcdfig img { display: block; max-width: 100%; height: auto; background: #fff; border-radius: 6px; padding: 4px; border: 1px solid var(--line); }
 
 /* Schermi larghi: il pannello si affianca alla pagina, che si restringe a sinistra e resta cliccabile */
 @media (min-width: 1100px) {

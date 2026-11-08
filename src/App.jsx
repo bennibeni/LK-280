@@ -139,7 +139,7 @@ export default function App() {
                 <Figure fig={page} active={active} setActive={setActive} onOpen={setOpen} />
                 <Legend numbers={numbers} active={active} setActive={setActive} onOpen={setOpen} />
               </div>
-              <ManualText key={page.id} figId={page.id} onNavigate={setOpen} focus={focus} />
+              <ManualText key={page.id} figId={page.id} onNavigate={setOpen} onGo={navigate} focus={focus} />
             </>
           ) : (
             <AppendixPage key={page.id + (focus?.tick || "")} section={page} onOpen={setOpen} initialQuery={focus?.query || ""} />
@@ -147,7 +147,7 @@ export default function App() {
         </div>
       </main>
 
-      {open != null && <DetailModal n={open} onNavigate={setOpen} onClose={() => setOpen(null)} />}
+      {open != null && <DetailModal n={open} onNavigate={setOpen} onGo={navigate} onClose={() => setOpen(null)} />}
     </>
   );
 }

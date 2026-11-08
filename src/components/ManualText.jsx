@@ -24,8 +24,8 @@ function Cell({ text, rt }) {
   return <ul className="cell-list">{items.map((t, i) => <li key={i}>{rt(t)}</li>)}</ul>;
 }
 
-function Block({ g, onNavigate }) {
-  const rt = (t) => <RichText text={t} onNavigate={onNavigate} />;
+function Block({ g, onNavigate, onGo }) {
+  const rt = (t) => <RichText text={t} onNavigate={onNavigate} onGo={onGo} />;
   switch (g.kind) {
     case "ol":
       return (
@@ -111,12 +111,17 @@ function Block({ g, onNavigate }) {
     case "row":
       return <p className="row">{rt(g.item.text)}</p>;
     default:
+      if (g.item.link) {
+        const { text, page, section } = g.item.link;
+        const start = g.item.text.indexOf(text);
+        if (start >= 0) return <p>{rt(g.item.text.slice(0, start))}<a href={`#${page}`} onClick={(e) => { e.preventDefault(); onGo({ page, section }); }}>{text}</a>{rt(g.item.text.slice(start + text.length))}</p>;
+      }
       return g.item.text === "↓" ? <div className="flow">↓</div> : <p>{rt(g.item.text)}</p>;
   }
 }
 
 // Testi del manuale non coperti dalle schede, in fondo alla pagina della figura.
-export default function ManualText({ figId, onNavigate, focus }) {
+export default function ManualText({ figId, onNavigate, onGo, focus }) {
   const sections = EXTRA[figId] || [];
   const [allOpen, setAllOpen] = useState(false);
   const [gen, setGen] = useState(0); // forza il ri-render dei <details> quando si apre/chiude tutto
@@ -128,7 +133,22 @@ export default function ManualText({ figId, onNavigate, focus }) {
     const el = document.getElementById(`${figId}-sec-${target}`);
     if (!el) return;
     el.open = true;
-    setTimeout(() => { el.scrollIntoView({ behavior: "smooth", block: "start" }); el.classList.add("flash"); setTimeout(() => el.classList.remove("flash"), 1600); }, 60);
+    let flashTimer;
+    const scrollTimer = setTimeout(() => {
+      const heading = el.querySelector("summary");
+      const bar = document.querySelector(".bar");
+      const barStyle = bar && window.getComputedStyle(bar);
+      const offset = bar ? bar.getBoundingClientRect().height + (parseFloat(barStyle.top) || 0) : 0;
+      heading.style.scrollMarginTop = `${offset + 12}px`;
+      heading.scrollIntoView({ behavior: "smooth", block: "start" });
+      el.classList.add("flash");
+      flashTimer = setTimeout(() => el.classList.remove("flash"), 1600);
+    }, 60);
+    return () => {
+      clearTimeout(scrollTimer);
+      clearTimeout(flashTimer);
+      el.classList.remove("flash");
+    };
   }, [target, focus?.tick]);
 
   if (!sections.length) return null;
@@ -151,7 +171,7 @@ export default function ManualText({ figId, onNavigate, focus }) {
           </summary>
           <div className="manual-body">
             {group(s.blocks).map((g, k) => (
-              <Block key={k} g={g} onNavigate={onNavigate} />
+              <Block key={k} g={g} onNavigate={onNavigate} onGo={onGo} />
             ))}
           </div>
         </details>

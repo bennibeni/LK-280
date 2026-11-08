@@ -15,7 +15,7 @@ const LISTS = {
   37: ["batteria", "Lista di assegnazione suoni di batteria"],
 };
 
-export default function DetailModal({ n, onNavigate, onClose }) {
+export default function DetailModal({ n, onNavigate, onClose, onGo }) {
   const dialogRef = useRef(null);
   const closeRef = useRef(null);
   const [name, , pages] = CONTROLS[n];
@@ -65,7 +65,7 @@ export default function DetailModal({ n, onNavigate, onClose }) {
 
         <div className="modal-body">
           <p className="intro">
-            <RichText text={detail.intro} onNavigate={onNavigate} />
+            <RichText text={detail.intro} onNavigate={onNavigate} onGo={onGo} />
           </p>
 
           {detail.sezioni.map((s, i) => (
@@ -75,7 +75,7 @@ export default function DetailModal({ n, onNavigate, onClose }) {
                 <ol className="steps">
                   {s.passi.map((t, k) => (
                     <li key={k}>
-                      <RichText text={t} onNavigate={onNavigate} />
+                      <RichText text={t} onNavigate={onNavigate} onGo={onGo} />
                     </li>
                   ))}
                 </ol>
@@ -84,7 +84,7 @@ export default function DetailModal({ n, onNavigate, onClose }) {
                 <ul className="notes">
                   {s.note.map((t, k) => (
                     <li key={k}>
-                      <RichText text={t} onNavigate={onNavigate} />
+                      <RichText text={t} onNavigate={onNavigate} onGo={onGo} />
                     </li>
                   ))}
                 </ul>

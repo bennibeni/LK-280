@@ -4173,7 +4173,8 @@ export const EXTRA = {
    "blocks": [
     {
      "t": "p",
-     "text": "Per informazioni sui messaggi di errore della scheda di memoria, vedere a pagina I-67."
+     "text": "Per informazioni sui messaggi di errore della scheda di memoria, vedere a pagina I-67.",
+     "link": { "text": "vedere a pagina I-67", "page": "foto", "section": "Messaggi di errore" }
     }
    ]
   }

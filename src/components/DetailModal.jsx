@@ -15,7 +15,7 @@ const LISTS = {
   37: ["batteria", "Lista di assegnazione suoni di batteria"],
 };
 
-export default function DetailModal({ n, onNavigate, onClose, onGo }) {
+export default function DetailModal({ n, detailSection, onNavigate, onClose, onGo }) {
   const dialogRef = useRef(null);
   const closeRef = useRef(null);
   const [name, , pages] = CONTROLS[n];
@@ -46,8 +46,11 @@ export default function DetailModal({ n, onNavigate, onClose, onGo }) {
   }, []);
 
   useEffect(() => {
-    dialogRef.current?.querySelector(".modal-body")?.scrollTo(0, 0);
-  }, [n]);
+    const body = dialogRef.current?.querySelector(".modal-body");
+    const section = detailSection && [...(body?.querySelectorAll("section") || [])].find((s) => s.querySelector("h3")?.textContent === detailSection);
+    if (section) section.scrollIntoView({ block: "nearest" });
+    else body?.scrollTo(0, 0);
+  }, [n, detailSection]);
 
   return (
     <div className="backdrop" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
@@ -56,7 +59,7 @@ export default function DetailModal({ n, onNavigate, onClose, onGo }) {
           <span className="badge big">{n}</span>
           <div className="modal-titles">
             <h2 id="modal-title">{name}</h2>
-            {pages && <div className="modal-pages">Manuale, pag. {pages}</div>}
+            {pages && <div className="modal-pages">Manuale, pag. <RichText text={pages} onNavigate={onNavigate} onGo={onGo} /></div>}
           </div>
           <button className="close" onClick={onClose} ref={closeRef} aria-label="Chiudi">
             ✕

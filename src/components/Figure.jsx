@@ -1,11 +1,12 @@
 import { useLayoutEffect, useRef, useState } from "react";
 import { CONTROLS } from "../data/controls.js";
+import RichText from "./RichText.jsx";
 
 const BASE = import.meta.env.BASE_URL;
 
 // Immagine della figura con un pulsante trasparente sopra ogni pallino.
 // Hover/focus: tooltip sintetico. Click: descrizione completa (modale).
-export default function Figure({ fig, active, setActive, onOpen }) {
+export default function Figure({ fig, active, setActive, onOpen, onGo }) {
   const stageRef = useRef(null);
   const [box, setBox] = useState(null);
   const dot = active != null ? fig.dots.find((d) => d[0] === active) : null;
@@ -40,14 +41,14 @@ export default function Figure({ fig, active, setActive, onOpen }) {
             {fig.markers ? n : null}
           </button>
         ))}
-        {dot && box && <Tooltip n={dot[0]} box={box} />}
+        {dot && box && <Tooltip n={dot[0]} box={box} onGo={onGo} />}
       </div>
       <p className="hint">Passa sopra un pallino per un riassunto, cliccalo per la descrizione completa.</p>
     </div>
   );
 }
 
-function Tooltip({ n, box }) {
+function Tooltip({ n, box, onGo }) {
   const ref = useRef(null);
   const [left, setLeft] = useState(box.x);
   useLayoutEffect(() => {
@@ -65,7 +66,7 @@ function Tooltip({ n, box }) {
         {name}
       </b>
       {desc}
-      {pages && <span className="pg">Manuale, pag. {pages}</span>}
+      {pages && <span className="pg">Manuale, pag. <RichText text={pages} onGo={onGo} /></span>}
       <span className="more">Clic per i dettagli</span>
     </div>
   );

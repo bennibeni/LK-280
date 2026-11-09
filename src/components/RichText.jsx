@@ -9,7 +9,7 @@ export default function RichText({ text, onNavigate, onGo }) {
     const control = /^\{(\d+)\}$/.exec(p)?.[1];
     const target = /^I-\d+$/.test(p) && pageReference(p);
     if (target && onGo) return (
-      <a key={i} href={`#${target.page}`} onClick={(e) => {
+      <a key={i} className="page-link" href={`#${target.page}${target.control ? `?control=${target.control}` : ""}`} onClick={(e) => {
         if (e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
         e.preventDefault();
         onGo(target);

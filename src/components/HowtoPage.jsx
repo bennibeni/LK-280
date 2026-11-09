@@ -26,7 +26,7 @@ export default function HowtoPage({ onOpen, onGo, focus }) {
             <h2>{h.title}</h2>
             <MiniMap nums={numsOf(h.steps)} onOpen={onOpen} />
             <ol className="steps">
-              {h.steps.map((s, i) => <li key={i}><RichText text={s} onNavigate={onOpen} /></li>)}
+              {h.steps.map((s, i) => <li key={i}><RichText text={s} onNavigate={onOpen} onGo={onGo} /></li>)}
             </ol>
             {h.links.length > 0 && (
               <div className="howto-links">

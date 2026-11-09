@@ -42,7 +42,7 @@ function Block({ g, onNavigate, onGo }) {
         <dl className="kv">
           {g.items.map((b, i) => (
             <div key={i}>
-              <dt>{b.k}</dt>
+              <dt>{rt(b.k)}</dt>
               <dd>{rt(b.v)}</dd>
             </div>
           ))}
@@ -56,7 +56,7 @@ function Block({ g, onNavigate, onGo }) {
           <table className="mtable">
             {head && (
               <thead>
-                <tr>{head.cells.map((c, i) => <th key={i}>{c}</th>)}</tr>
+                <tr>{head.cells.map((c, i) => <th key={i}>{rt(c)}</th>)}</tr>
               </thead>
             )}
             <tbody>
@@ -64,7 +64,7 @@ function Block({ g, onNavigate, onGo }) {
                 .filter((b) => b.t !== "thead")
                 .map((b, i) =>
                   b.t === "h" ? (
-                    <tr key={i} className="cat"><td colSpan={width}>{b.text}</td></tr>
+                    <tr key={i} className="cat"><td colSpan={width}>{rt(b.text)}</td></tr>
                   ) : (
                     <tr key={i}>{b.cells.map((c, j) => <td key={j}><Cell text={c} rt={rt} /></td>)}</tr>
                   )
@@ -99,7 +99,7 @@ function Block({ g, onNavigate, onGo }) {
     case "lcd":
       return <div className="lcd" title="Testo sul display">{g.item.text.split(" / ").map((t, i) => <span key={i}>{t}</span>)}</div>;
     case "h":
-      return <h4>{g.item.text}</h4>;
+      return <h4>{rt(g.item.text)}</h4>;
     case "img":
       if (g.item.cls === "lcdimg")
         return (
@@ -114,16 +114,16 @@ function Block({ g, onNavigate, onGo }) {
       if (g.item.link) {
         const { text, page, section } = g.item.link;
         const start = g.item.text.indexOf(text);
-        if (start >= 0) return <p>{rt(g.item.text.slice(0, start))}<a href={`#${page}`} onClick={(e) => { e.preventDefault(); onGo({ page, section }); }}>{text}</a>{rt(g.item.text.slice(start + text.length))}</p>;
+        if (start >= 0) return <p>{rt(g.item.text.slice(0, start))}<a className="page-link" href={`#${page}`} onClick={(e) => { e.preventDefault(); onGo({ page, section }); }}>{text}</a>{rt(g.item.text.slice(start + text.length))}</p>;
       }
       return g.item.text === "↓" ? <div className="flow">↓</div> : <p>{rt(g.item.text)}</p>;
   }
 }
 
 // Testi del manuale non coperti dalle schede, in fondo alla pagina della figura.
-export default function ManualText({ figId, onNavigate, onGo, focus }) {
-  const sections = EXTRA[figId] || [];
-  const [allOpen, setAllOpen] = useState(false);
+export default function ManualText({ figId, onNavigate, onGo, focus, sections: suppliedSections, initiallyOpen = false }) {
+  const sections = suppliedSections || EXTRA[figId] || [];
+  const [allOpen, setAllOpen] = useState(initiallyOpen);
   const [gen, setGen] = useState(0); // forza il ri-render dei <details> quando si apre/chiude tutto
   const target = focus?.section ? sections.findIndex((s) => s.title === focus.section) : -1;
 
@@ -166,8 +166,8 @@ export default function ManualText({ figId, onNavigate, onGo, focus }) {
       {sections.map((s, i) => (
         <details key={`${figId}-${i}-${gen}`} id={`${figId}-sec-${i}`} open={allOpen || i === target}>
           <summary>
-            <span className="st">{s.title}</span>
-            <span className="sp">pag. {s.pages.length > 1 ? `${s.pages[0]}–${s.pages[s.pages.length - 1]}` : s.pages[0]}</span>
+            <span className="st"><RichText text={s.title} onNavigate={onNavigate} onGo={onGo} /></span>
+            <span className="sp">pag. <RichText text={s.pages.join(", ")} onNavigate={onNavigate} onGo={onGo} /></span>
           </summary>
           <div className="manual-body">
             {group(s.blocks).map((g, k) => (

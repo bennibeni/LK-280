@@ -38,12 +38,30 @@ body { font-family: var(--f-body); font-size: 16px; line-height: 1.45; }
 body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
 button { font: inherit; color: inherit; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.page-link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .2em;
+  border-radius: 3px;
+  transition: background-color .15s ease, text-decoration-thickness .15s ease;
+}
+.page-link:hover, .page-link:focus-visible {
+  background-color: var(--accent-soft);
+  text-decoration-thickness: 2px;
+}
+.page-link:active { background-color: var(--line); }
 
 .bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line);
   padding-block: 10px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
 .bar-in { max-width: 1180px; margin: 0 auto; display: flex; gap: 8px 16px; align-items: center; flex-wrap: wrap; justify-content: flex-start; }
 .brand { font-family: var(--f-display); font-weight: 700; font-size: 1.25rem; letter-spacing: .04em; text-transform: uppercase; white-space: nowrap; }
 .brand span { color: var(--accent); }
+.visit-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.visit-nav-label { font-size: .8rem; color: var(--muted); margin-right: 2px; }
+.visit-nav button { border: 1px solid var(--line); background: var(--surface); border-radius: 6px; padding: 6px 10px; cursor: pointer; white-space: nowrap; }
+.visit-nav button:disabled { opacity: .35; cursor: default; }
 .tabs { display: flex; gap: 4px; overflow-x: auto; flex: 1 1 100%; order: 3; min-width: 0; scrollbar-width: thin; padding-bottom: 2px; }
 .tab { flex: none; border: 1px solid var(--line); background: transparent; border-radius: 4px; padding: 4px 9px; cursor: pointer;
   font-family: var(--f-mono); font-size: .78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
@@ -76,6 +94,7 @@ h1 { margin: 2px 0 0; font-family: var(--f-display); font-weight: 700; font-size
 .tip .n { font-family: var(--f-mono); color: var(--accent); margin-right: 6px; }
 .tip .pg { display: block; margin-top: 4px; font-family: var(--f-mono); font-size: .72rem; opacity: .7; }
 .tip .more { display: block; margin-top: 2px; font-size: .75rem; color: var(--accent); }
+.tip a { pointer-events: auto; color: inherit; }
 
 .legend { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 6px 0; max-height: 70vh; overflow-y: auto; }
 .legend h2 { margin: 6px 14px 6px; font-family: var(--f-mono); font-weight: 500; font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
